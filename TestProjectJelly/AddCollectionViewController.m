@@ -48,13 +48,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    NSArray *images = @[@"image-1", @"image-2", @"image-3", @"image-4", @"image-5"];
-    
-    M42RandomIndexPermutation *permutation = [[M42RandomIndexPermutation alloc] initWithCount:images.count usingSeed:[NSDate date].timeIntervalSince1970];
-    for(int i = 0; i<images.count; i++) {
-        NSInteger index = [permutation next];
-        NSLog(@"%@",images[index]);
-    }
     
     self.images = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4" , nil];
 
